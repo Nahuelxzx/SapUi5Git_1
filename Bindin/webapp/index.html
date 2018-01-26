@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Bindin</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"Bindin": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				
+				//new sap.m.Text({ text : "{/greetingText}" }),
+				
+				/*new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "Bindin"
+					})*/
+			// Create a JSON model from an object literal
+			var oModel = new sap.ui.model.json.JSONModel({
+				firstName: "Harry",
+				lastName: "Hawkyn_1",
+				enabled: true,
+				panelHeaderText: "Data Binding Basico Ejemplo 1"
+				//greetingText: "Hi, my name is Harry Hawk con binding"
+			});
+			
+			oModel.setDefaultBindingMode(sap.ui.model.BindingMode.OneWay);
+			
+			// Assign the model object to the SAPUI5 core
+			sap.ui.getCore().setModel(oModel);
+					
+					//Mostramos lo generado en la vista con XML
+				new sap.ui.core.mvc.XMLView({ viewName : "Bindin.view.vistaBinding" })
+				.placeAt("content");
+					
+				//new sap.m.Text({text: "{/greetingText}"}).
+				//placeAt("content");
+				//}).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>
