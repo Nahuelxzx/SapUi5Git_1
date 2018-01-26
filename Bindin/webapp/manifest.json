@@ -1,7 +1,7 @@
 {
 	"_version": "1.5.0",
 	"sap.app": {
-		"id": "Bindin",
+		"id": "SapUi5Git_1/Bindin",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -39,7 +39,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "Bindin.view.vistaBinding",
+			"viewName": "SapUi5Git_1/Bindin.view.vistaBinding",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -62,7 +62,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "Bindin.i18n.i18n"
+					"bundleName": "SapUi5Git_1/Bindin.i18n.i18n"
 				}
 			}
 		},

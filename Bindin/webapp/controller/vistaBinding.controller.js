@@ -3,7 +3,7 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 
-	return Controller.extend("Bindin.controller.vistaBinding", {
+	return Controller.extend("SapUi5Git_1/Bindin.controller.vistaBinding", {
 
 	});
 });

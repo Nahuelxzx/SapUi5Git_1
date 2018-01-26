@@ -1,5 +1,5 @@
 {
-  "welcomeFile": "/webapp/index.html",
+  "welcomeFile": "SapUi5Git_1/webapp/index.html",
   "routes": [
     {
       "path": "/resources",
